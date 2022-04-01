@@ -1,0 +1,99 @@
+
+body{
+    border-style: solid;
+    border-width:1px;
+    padding:10px;
+}
+label{
+    font-weight: bold;
+}
+.required::after,.name::after,.experience::after{
+    content:"*";
+    color:red;
+}
+.secondname{
+    margin-left: 20px;
+}
+
+.firstlabel{
+    font-weight: 100;
+}
+
+.secondlabel{
+    position: relative;
+    margin-left: 20px;
+    font-weight: 100;
+}
+
+input{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.rating{
+    color: rgb(241, 226, 13);
+}
+
+.rating input{
+    display: none;
+}
+
+.rating input+label{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.rating input:checked+label~label{
+    color:#838383
+}
+
+.rating label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+th{
+    font-weight: 100;
+  
+}
+
+#tab2{
+    width: 900px;
+    text-align: center;
+    table-layout: fixed;
+}
+
+#tab3{
+    width: 900px;
+    text-align: center;
+    table-layout: fixed;
+}
+
+tr:nth-child(even){
+    background-color:lightgrey;
+    background-position-x: left;
+}
+
+textarea{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#submit{
+    padding: 5px;
+}
+
+td{
+    grid-template-columns: 50px 1fr;
+}
+
+@media screen and(min-width:4300px){
+    #id{
+        float:left;
+    }
+    *{
+        border-width: auto;
+    }
+}
